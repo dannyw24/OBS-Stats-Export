@@ -50,7 +50,7 @@ public class ObsStatsExportPlugin extends Plugin {
         log.info("OBS Stats Export plugin started!");
         
         // Create stats directory in RuneLite folder
-        statsDirectory = Paths.get(RuneLite.RUNELITE_DIR, STATS_FOLDER);
+        statsDirectory = Paths.get(RuneLite.RUNELITE_DIR.toString(), STATS_FOLDER);
         
         try {
             Files.createDirectories(statsDirectory);
